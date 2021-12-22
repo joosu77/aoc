@@ -9,7 +9,7 @@ arr = []
 for l in inp.readlines():
     ll = l.strip()
     t = [l.split()[0],ll.split()[1].split(",")]
-    t[0] = 1 if t[0] == "on" else 0
+    t[0] = 1 if t[0] == "off" else 0
     t = [t[0],t[1][0],t[1][1],t[1][2]]
     t[1] = list(map(int,(t[1].split("=")[1].split(".."))))
     t[2] = list(map(int,t[2].split("=")[1].split("..")))
@@ -38,27 +38,31 @@ def check(sq1,sq2,minus):
 def rot(sq):
     return [-sq[3],-sq[2],sq[0],sq[1]]
 
-def addSq(sqs, sq, m=False):
-    print(sqs,sq,m)
-    for si in range(len(sqs)):
-        sq1 = sq
-        sq2 = sqs[si]
-        ret = -1
-        for turns in range(4):
-            if ret == -1:
-                ret = check(sq1,sq2,m)
-                sq1 = rot(sq1)
-                sq2 = rot(sq2)
-            else:
-                ret = [rot(r) for r in ret]
-        if ret != -1:
-            end = sqs[si+1:]
-            if not end:
-                return ret
-            for ss in ret:
-                end = addSq(end, ss)
-            return sqs + end
-    return sqs if m else sqs+[sq]
+def addSq(sqsa, sqa, ma=False):
+    print(sqsa,sqa,ma)
+    q = [[sqsa,sqa,ma]]
+    res = []
+    while q:
+        sqs,sq,m = q.pop(0)
+        for si in range(len(sqs)):
+            sq1 = sq
+            sq2 = sqs[si]
+            ret = -1
+            for turns in range(4):
+                if ret == -1:
+                    ret = check(sq1,sq2,m)
+                    sq1 = rot(sq1)
+                    sq2 = rot(sq2)
+                else:
+                    ret = [rot(r) for r in ret]
+            if ret != -1:
+                end = sqs[si+1:]
+                if not end:
+                    return ret
+                for ss in ret:
+                    end = addSq(end, ss)
+                return sqs + end
+        return sqs if m else sqs+[sq]
     
 squares = {}
 
