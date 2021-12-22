@@ -1,0 +1,95 @@
+
+*** These modified files were found in JOE when it aborted on Fri Dec  3 07:40:47 2021
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+\\
+\\\\
+\\\\
+
+*** File '(Unnamed)'
+payload
+\
+\\
+exp_key()
+mac
+gbs
+20910
+20920
+RMC
+030920
+
+*** File '(Unnamed)'
+d3.py
+d3.py
+d3.py
+d3.py
+d3.py
+d3.py
+d3.py
+d3.py
+d3.py
+d3.py
+d3.py
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
+
+*** These modified files were found in JOE when it aborted on Tue Dec  7 07:44:45 2021
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Tue Dec  7 08:06:37 2021
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+\\
+\\\\
+\\\\
+
+*** File '(Unnamed)'
+payload
+\
+\\
+exp_key()
+mac
+gbs
+20910
+20920
+RMC
+030920
+
+*** File '(Unnamed)'
+d3.py
+d3.py
+d3.py
+d3.py
+d6.py
+d6.py
+d6.py~
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+d6.py
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
+
+*** These modified files were found in JOE when it aborted on Thu Dec  9 07:58:34 2021
+*** JOE was aborted because the terminal closed
